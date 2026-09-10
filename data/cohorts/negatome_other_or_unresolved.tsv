@@ -1,0 +1,23 @@
+source	record_id	protein_a	protein_b	taxon_a	taxon_b	assay_raw	assay_ontology	old_historical_class	eligible_common_qc	score	pair_tokens	exact_string_positive_overlap	biophysical_only
+Negatome	NEG:00091	O15105	P31269	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.992458	701	0	0
+Negatome	NEG:00092	O15105	P31273	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.999765	671	0	0
+Negatome	NEG:00147	O43186	O75531	9606.0	9606.0	MI:0077 - nuclear magnetic resonance	other_or_unresolved	other	1	0.04793	391	0	0
+Negatome	NEG:00213	O60894	P41587	9606.0	9606.0	MI:0054 - fluorescence-activated cell sorting	other_or_unresolved	other	1	0.996375	589	0	0
+Negatome	NEG:00214	O60895	P41587	9606.0	9606.0	MI:0054 - fluorescence-activated cell sorting	other_or_unresolved	other	1	0.997235	616	0	0
+Negatome	NEG:00215	O60896	P41587	9606.0	9606.0	MI:0054 - fluorescence-activated cell sorting	other_or_unresolved	other	1	0.883129	589	0	0
+Negatome	NEG:00312	O75888	Q96RJ3	9606.0	9606.0	MI:0054 - fluorescence-activated cell sorting | MI:0110 - text mining, MI:0113 - western blot	other_or_unresolved	other	1	0.96799	437	0	0
+Negatome	NEG:00379	P01286	P20396	9606.0	9606.0	MI:0401 - biochemical	other_or_unresolved	other	1	0.01088	353	0	0
+Negatome	NEG:00383	P01375	P07911	9606.0	9606.0	MI:0113 - western blot	other_or_unresolved	other	1	0.059993	876	0	0
+Negatome	NEG:00415	P02778	Q16570	9606.0	9606.0	MI:0110 - text mining, MI:0054 - fluorescence-activated cell sorting	other_or_unresolved	other	1	0.999075	437	0	0
+Negatome	NEG:00446	P04156	Q9UM11	9606.0	9606.0	MI:019 - coimmunoprecipitation, MI:0110 - text mining	other_or_unresolved	other	1	0.000115	752	0	0
+Negatome	NEG:00613	P10747	Q9NZQ7	9606.0	9606.0	MI:0054 - flow cytometry, MI:0110 - text mining | MI:0422 - immunostaining	other_or_unresolved	other	1	0.99981	513	0	0
+Negatome	NEG:00802	P20226	P23511	9606.0	9606.0	MI:0113 - western blot	other_or_unresolved	other	1	0.999937	689	0	0
+Negatome	NEG:00811	P20963	Q6PIZ9	9606.0	9606.0	MI:0663 - confocal microscopy	other_or_unresolved	other	1	0.090989	353	0	0
+Negatome	NEG:00957	P31269	P84022	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.99917	700	0	0
+Negatome	NEG:00958	P31269	Q15796	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.998828	742	0	0
+Negatome	NEG:00959	P31273	P84022	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.999741	670	0	0
+Negatome	NEG:00960	P31273	Q15796	9606.0	9606.0	MI:0413 - electrophoretic mobility shift assay	other_or_unresolved	other	1	0.999774	712	0	0
+Negatome	NEG:01418	Q07325	Q16570	9606.0	9606.0	MI:0110 - text mining, MI:0054 - fluorescence-activated cell sorting	other_or_unresolved	other	1	0.999126	464	0	0
+Negatome	NEG:01419	Q07699	Q9NY72	9606.0	9606.0	MI:0022 colocalization by immunostaining -	other_or_unresolved	other	1	0.999841	436	0	0
+Negatome	NEG:01591	Q5JTD0	Q9Y624	9606.0	9606.0	MI:0022 - colocalization by immunostaining	other_or_unresolved	other	1	7.5e-05	859	0	0
+Negatome	NEG:01834	Q9NZQ7	Q9Y6W8	9606.0	9606.0	MI:0422 - immunostaining	other_or_unresolved	other	1	0.999753	492	0	0

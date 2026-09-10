@@ -1,0 +1,85 @@
+{
+  "n_complete": 300,
+  "n_missing": 0,
+  "n_pilot48_nested": 48,
+  "missing_reasons": {},
+  "overall": {
+    "af3_iptm": {
+      "n": 300,
+      "P_D_gt_C": 0.63,
+      "wilson95_lo": 0.574043509355098,
+      "wilson95_hi": 0.6826691988454907,
+      "n_strict": 184,
+      "n_tie": 10,
+      "mean_AD": 0.3158666666666667,
+      "mean_AC": 0.2000333333333333,
+      "mean_delta": 0.11583333333333333
+    },
+    "esmfold_neg_mean_inter_pae": {
+      "n": 300,
+      "P_D_gt_C": 0.5516666666666666,
+      "wilson95_lo": 0.4950890694743713,
+      "wilson95_hi": 0.6069377760925293,
+      "n_strict": 165,
+      "n_tie": 1,
+      "mean_AD": -25.47319097630354,
+      "mean_AC": -26.655832492680542,
+      "mean_delta": 1.1826415163770045
+    },
+    "esmfold_n_ca_contacts_8A": {
+      "n": 300,
+      "P_D_gt_C": 0.51,
+      "wilson95_lo": 0.45366316504261445,
+      "wilson95_hi": 0.5660839663574307,
+      "n_strict": 148,
+      "n_tie": 10,
+      "mean_AD": 773.14,
+      "mean_AC": 831.55,
+      "mean_delta": -58.41
+    }
+  },
+  "nested_pilot48": {
+    "af3_iptm": {
+      "n": 48,
+      "P_D_gt_C": 0.6354166666666666,
+      "wilson95_lo": 0.49397611678706527,
+      "wilson95_hi": 0.7567877485257335,
+      "n_strict": 29,
+      "n_tie": 3,
+      "mean_AD": 0.25229166666666664,
+      "mean_AC": 0.16125,
+      "mean_delta": 0.09104166666666667
+    },
+    "esmfold_neg_mean_inter_pae": {
+      "n": 48,
+      "P_D_gt_C": 0.5416666666666666,
+      "wilson95_lo": 0.4029083309494732,
+      "wilson95_hi": 0.6742497814544648,
+      "n_strict": 26,
+      "n_tie": 0,
+      "mean_AD": -25.987668702243298,
+      "mean_AC": -27.335089302800935,
+      "mean_delta": 1.3474206005576317
+    }
+  },
+  "strict_discordance_excluding_ties": {
+    "both_D": 109,
+    "AF3_only": 75,
+    "ESMFold_only": 55,
+    "both_C": 51
+  },
+  "esmfold_qc": {
+    "n_ok_jobs": 577,
+    "mean_chain_plddt_max": 15.633045686987728,
+    "mean_chain_plddt_median": 12.720455363114775,
+    "mean_inter_pae_median": 27.32912986777798,
+    "n_mean_inter_pae_lt_15": 26,
+    "n_plddt_ge_50": 0
+  },
+  "protocol": {
+    "esmfold": "facebook/esmfold_v1 via transformers EsmForProteinFolding; seqA+G25+seqB",
+    "af3": "existing main300 seed1 triton summaries",
+    "primary_esm_score": "-mean inter-chain PAE after dropping linker residues",
+    "note": "ESMFold linker-PAE is not AF3 ipTM; compare only D vs C order."
+  }
+}

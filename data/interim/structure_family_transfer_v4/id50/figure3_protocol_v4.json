@@ -1,0 +1,43 @@
+{
+  "S_anchor_supplement_only": true,
+  "S_partner": "min(max identity of C to train proteins, max identity of D to train proteins)",
+  "bce_rows_per_triplet": 2,
+  "bootstrap": "cluster bootstrap by anchor MMseqs family",
+  "claim": "structure hard-negative supervision transfer, not pretrained family bias",
+  "collapse_unique_pairs": false,
+  "dominant_family_seen_cluster": "P40227",
+  "dominant_family_seen_triplet_mentions": 30,
+  "family_seen_not_used_for_selection": true,
+  "family_seen_triplets": 101,
+  "family_unseen_sealed": true,
+  "family_unseen_triplets": 540,
+  "figure": "3",
+  "internal_dev_triplets": 186,
+  "leave_dominant_cluster_out": true,
+  "main_train_triplets": 1865,
+  "n_protein_pool": 1195,
+  "original_arm": "published humanV12, no continued training",
+  "primary_endpoint": "triplet P(s(A,D)>s(A,C)); ties 0.5",
+  "random_arm_keeps_original_c": false,
+  "replicated_noncontact": "aggregate_distinct_pdb_count>=2; panel not a 3d curve",
+  "same_protein_pool": true,
+  "secondary_margin": "m=s(A,D)-s(A,C); delta vs original and vs random FT",
+  "seeds": [
+    20260816,
+    20260817,
+    20260818
+  ],
+  "supplementary_full_structure_triplets": 2124,
+  "train_hparams": {
+    "batch_size": 8,
+    "checkpoint": "PLM-interact-650M-humanV12",
+    "early_stop_metric": "internal_dev_auprc",
+    "epochs": 3,
+    "grad_accum": 4,
+    "head_lr_scale": 10.0,
+    "lr": 1e-05,
+    "max_length": 1024,
+    "patience": 2,
+    "warmup_frac": 0.05
+  }
+}

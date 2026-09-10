@@ -1,0 +1,302 @@
+{
+  "status": "manuscript_missing_numbers_v1",
+  "figure1b_structural_resource": {
+    "locked_total": 558112,
+    "class_A_open_wedge": 129632,
+    "class_B_other_contact": 428420,
+    "class_C_two_chain_distant": 47,
+    "unclassified_no_supporting_topology": 13,
+    "sum_check": 558112,
+    "identity": "A+B+C+unclassified = 558,112; A+B+C = 558,099. The 13 are unclassified, not Class C.",
+    "source": "docs/audits/NEGATIVE_FEASIBILITY_AUDIT_2026-07-21.md and STRUCTURE_TRAINING_POOL_AUDIT_2026-07-22.md; website candidate export, weakest-assembly topology."
+  },
+  "figure3_final_layer_probes": {
+    "ESM-2_pairCLS": {
+      "n_train": 1865,
+      "n_test": 540,
+      "context_auroc": 0.5854,
+      "context_ci95": [
+        0.5678,
+        0.6049
+      ],
+      "contact_auroc": 0.4997,
+      "contact_ci95": [
+        0.485,
+        0.5132
+      ],
+      "ci_method": "triplet-cluster percentile bootstrap, n_boot=200, seed 20260818 / +1",
+      "vector": "concatenated pair input, hidden_states[33][:,0,:] of raw ESM-2 650M"
+    },
+    "PLM-Interact_pairCLS": {
+      "n_train": 1865,
+      "n_test": 540,
+      "context_auroc": 0.7083,
+      "context_ci95": [
+        0.6806,
+        0.7314
+      ],
+      "contact_auroc": 0.5069,
+      "contact_ci95": [
+        0.4801,
+        0.5304
+      ],
+      "ci_method": "triplet-cluster percentile bootstrap, n_boot=200, seed 20260818 / +1",
+      "vector": "same pair-CLS site on published PLM-Interact-650M-humanV12"
+    },
+    "MINT_concat_meanpool": {
+      "n_train": 1865,
+      "n_test": 540,
+      "context_auroc": 0.5233,
+      "context_ci95": [
+        0.5045,
+        0.5413
+      ],
+      "contact_auroc": 0.4792,
+      "contact_ci95": [
+        0.4607,
+        0.4984
+      ],
+      "ci_method": "triplet-cluster percentile bootstrap, n_boot=200, seed 20260818 / +1",
+      "vector": "concat(mean-pool chain A, mean-pool chain B) after MINT crop-512 seed 13"
+    },
+    "ESM3": {
+      "same_protocol_probe": false,
+      "n_train_length_ok": 1489,
+      "n_internal_val_length_ok": 165,
+      "n_family_unseen_length_ok": 489,
+      "dropped_over_length": {
+        "train": 190,
+        "validation": 21,
+        "family_unseen": 51
+      },
+      "n_overlength_proteins": 85,
+      "parent_split": "Figure 3 train_eligible 1865 = 1489+165+190+21; family_unseen 540 = 489+51",
+      "available_instead": {
+        "family_unseen_P_D_gt_C_frozen_A": 0.534,
+        "family_unseen_contact_AUPRC_C": 0.067,
+        "contact_prevalence": 0.063,
+        "note": "These are ranking / contact-head diagnostics, not ridge context/contact AUROC."
+      }
+    }
+  },
+  "negatome_443_vs_298": {
+    "historical_direct_binary_443": {
+      "n": 443,
+      "definition": "Figure 4/6 historical: Manual-stringent AND human-human AND canonical AND len_a+len_b+3<=1024 AND >=1 DIRECT_MI method AND not a STRING v12 train positive. DIRECT_MI includes Y2H/BRET/FRET/crosslink/SPA as well as reconstituted assays.",
+      "used_by": "Figure 6 Negatome comparator; MINT/SPRINT negative-semantics v1"
+    },
+    "reconstituted_direct_298": {
+      "n": 298,
+      "definition": "Revision-v2 / current Fig.4 semantic analysis: same QC as 443, but assay restricted to reconstituted/purified methods (NEG_RECONSTITUTED_MI). Y2H/BRET/FRET/crosslink/SPA moved to cell_binary_proximity.",
+      "used_by": "Section 5 / Fig.4 bars 298/145/119; Fig.5 cross-model Negatome n"
+    },
+    "partition_of_443": {
+      "cell_binary_proximity": 145,
+      "reconstituted_direct": 298
+    },
+    "identity": "443 = 298 reconstituted_direct + 145 cell_binary_proximity"
+  },
+  "figure5_cross_model": {
+    "D-SCRIPT": {
+      "Negatome_reconstituted": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.004543,
+        "experimental_median": 0.004181,
+        "p_structural_gt_experimental": 0.7243072093526738,
+        "cliffs_delta": 0.4486144187053476,
+        "bootstrap_ci95": [
+          0.6913196342552501,
+          0.754974612334921
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 98,
+        "structural_median": 0.004543,
+        "experimental_median": 0.004186499999999999,
+        "p_structural_gt_experimental": 0.6645675608953259,
+        "cliffs_delta": 0.32913512179065174,
+        "bootstrap_ci95": [
+          0.6159598728604345,
+          0.7086308838051348
+        ]
+      }
+    },
+    "Topsy-Turvy": {
+      "Negatome_reconstituted": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.4973575,
+        "experimental_median": 0.2640255,
+        "p_structural_gt_experimental": 0.6219392725698203,
+        "cliffs_delta": 0.24387854513964058,
+        "bootstrap_ci95": [
+          0.5903895086869452,
+          0.6510670599696905
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 98,
+        "structural_median": 0.4973575,
+        "experimental_median": 0.2904455,
+        "p_structural_gt_experimental": 0.6051534726793943,
+        "cliffs_delta": 0.2103069453587887,
+        "bootstrap_ci95": [
+          0.5495343873436471,
+          0.6547469038018433
+        ]
+      }
+    },
+    "PLM-Interact_revision_v2": {
+      "Negatome_reconstituted": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.9975905,
+        "experimental_median": 0.000287,
+        "p_structural_gt_experimental": 0.868005114743451,
+        "cliffs_delta": 0.736010229486902,
+        "bootstrap_ci95": [
+          0.8454233532691059,
+          0.8891847193656636
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 104,
+        "structural_median": 0.9975905,
+        "experimental_median": 0.0079125,
+        "p_structural_gt_experimental": 0.7957971464019851,
+        "cliffs_delta": 0.5915942928039701,
+        "bootstrap_ci95": [
+          0.7541893804280397,
+          0.8338402411600495
+        ]
+      }
+    },
+    "protneg_denominator": {
+      "PLM_MINT_SPRINT": 104,
+      "DSCRIPT_Topsy": 98,
+      "dropped": 6,
+      "drop_reason": "pairs over max_len are a dscript model limitation (position-weight vector capped at 2000 residues), left unscored",
+      "scored_over_requested": "396/402 experimental pairs; 6 skipped >2000 aa"
+    },
+    "MINT_SPRINT_with_ci": {
+      "PLM-Interact": {
+        "Negatome_443_historical_direct_binary": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "P_structural_score_gt_experimental": 0.8179,
+          "bootstrap_ci95": [
+            0.7945,
+            0.8407
+          ],
+          "n_boot": 2000,
+          "seed": 20260817,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "Negatome_298_reconstituted_direct": {
+          "n_structural": 2480,
+          "n_experimental": 298,
+          "P_structural_score_gt_experimental": 0.868,
+          "bootstrap_ci95": [
+            0.8461,
+            0.8893
+          ],
+          "n_boot": 2000,
+          "seed": 20260818,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "ProtNeg_104_direct_assay": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "P_structural_score_gt_experimental": 0.7958,
+          "bootstrap_ci95": [
+            0.7554,
+            0.8357
+          ],
+          "n_boot": 2000,
+          "seed": 20260819,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        }
+      },
+      "MINT": {
+        "Negatome_443_historical_direct_binary": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "P_structural_score_gt_experimental": 0.7782,
+          "bootstrap_ci95": [
+            0.7568,
+            0.7988
+          ],
+          "n_boot": 2000,
+          "seed": 20260817,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "Negatome_298_reconstituted_direct": {
+          "n_structural": 2480,
+          "n_experimental": 298,
+          "P_structural_score_gt_experimental": 0.7878,
+          "bootstrap_ci95": [
+            0.7651,
+            0.8098
+          ],
+          "n_boot": 2000,
+          "seed": 20260818,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "ProtNeg_104_direct_assay": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "P_structural_score_gt_experimental": 0.7799,
+          "bootstrap_ci95": [
+            0.7429,
+            0.8145
+          ],
+          "n_boot": 2000,
+          "seed": 20260819,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        }
+      },
+      "SPRINT": {
+        "Negatome_443_historical_direct_binary": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "P_structural_score_gt_experimental": 0.3548,
+          "bootstrap_ci95": [
+            0.3297,
+            0.3809
+          ],
+          "n_boot": 2000,
+          "seed": 20260817,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "Negatome_298_reconstituted_direct": {
+          "n_structural": 2480,
+          "n_experimental": 298,
+          "P_structural_score_gt_experimental": 0.4026,
+          "bootstrap_ci95": [
+            0.3718,
+            0.4341
+          ],
+          "n_boot": 2000,
+          "seed": 20260818,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        },
+        "ProtNeg_104_direct_assay": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "P_structural_score_gt_experimental": 0.3848,
+          "bootstrap_ci95": [
+            0.3448,
+            0.4261
+          ],
+          "n_boot": 2000,
+          "seed": 20260819,
+          "method": "independent two-sample percentile bootstrap; same as revision-v2 Fig.5"
+        }
+      }
+    }
+  }
+}

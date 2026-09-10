@@ -1,0 +1,268 @@
+{
+  "dev_matched_random_bce_rows": 314,
+  "dev_structure_bce_rows": 314,
+  "drop_pdb_overlap": true,
+  "family_seen_frac_target": 0.15,
+  "family_size_hist_family_seen": {
+    "1": 26,
+    "2-5": 41,
+    "21-100": 2,
+    "6-20": 25
+  },
+  "family_size_hist_family_unseen": {
+    "1": 219,
+    "2-5": 246,
+    "21-100": 2,
+    "6-20": 59,
+    "gt100": 1
+  },
+  "family_size_hist_train": {
+    "1": 211,
+    "2-5": 337,
+    "21-100": 32,
+    "6-20": 216
+  },
+  "go_no_go": {
+    "enough_for_main_text": true,
+    "family_seen_triplets": 152,
+    "family_unseen_families": 527,
+    "family_unseen_triplets": 652
+  },
+  "label_semantics": "assembly_context_direct_noncontact_not_universal_nonbinder",
+  "leakage": {
+    "accession_overlap_seen_unseen": 0,
+    "accession_overlap_train_seen": 0,
+    "accession_overlap_train_unseen": 0,
+    "family_overlap_train_seen": 94,
+    "family_overlap_train_unseen": 0,
+    "family_seen_definition_holds": true,
+    "family_unseen_all_three_disjoint": true,
+    "pdb_overlap_train_seen": 0,
+    "pdb_overlap_train_unseen": 0
+  },
+  "local_fit_is_not_heldout": true,
+  "matched_random": {
+    "n_eligible": 1569,
+    "n_full_train": 1569,
+    "n_ineligible_dropped_from_main": 181,
+    "status": {
+      "ok": 1569
+    }
+  },
+  "min_seq_id": 0.3,
+  "min_train_frac": 0.5,
+  "n_core_triplets": 3365,
+  "n_held_proteins": 314,
+  "n_unseen_families": 530,
+  "pdb_filter": {
+    "family_seen_pdb_overlap": 49,
+    "family_unseen_pdb_overlap": 20
+  },
+  "protocol": {
+    "S_anchor_supplement_only": true,
+    "S_partner": "min(max identity of C to train proteins, max identity of D to train proteins)",
+    "bce_rows_per_triplet": 2,
+    "bootstrap": "cluster bootstrap by anchor MMseqs family",
+    "claim": "structure hard-negative supervision transfer, not pretrained family bias",
+    "collapse_unique_pairs": false,
+    "dominant_family_seen_cluster": "P50991",
+    "dominant_family_seen_triplet_mentions": 63,
+    "family_seen_not_used_for_selection": true,
+    "family_seen_triplets": 152,
+    "family_unseen_sealed": true,
+    "family_unseen_triplets": 652,
+    "figure": "3",
+    "internal_dev_triplets": 157,
+    "leave_dominant_cluster_out": true,
+    "main_train_triplets": 1569,
+    "n_protein_pool": 1108,
+    "original_arm": "published humanV12, no continued training",
+    "primary_endpoint": "triplet P(s(A,D)>s(A,C)); ties 0.5",
+    "random_arm_keeps_original_c": false,
+    "replicated_noncontact": "aggregate_distinct_pdb_count>=2; panel not a 3d curve",
+    "same_protein_pool": true,
+    "secondary_margin": "m=s(A,D)-s(A,C); delta vs original and vs random FT",
+    "seeds": [
+      20260816,
+      20260817,
+      20260818
+    ],
+    "supplementary_full_structure_triplets": 1750,
+    "train_hparams": {
+      "batch_size": 8,
+      "checkpoint": "PLM-interact-650M-humanV12",
+      "early_stop_metric": "internal_dev_auprc",
+      "epochs": 3,
+      "grad_accum": 4,
+      "head_lr_scale": 10.0,
+      "lr": 1e-05,
+      "max_length": 1024,
+      "patience": 2,
+      "warmup_frac": 0.05
+    }
+  },
+  "table": [
+    {
+      "mmseqs_families": 796,
+      "replicated_ac_triplets": 1184,
+      "replicated_unique_ac": 504,
+      "split": "train_eligible",
+      "triplets": 1569,
+      "unique_A": 560,
+      "unique_C": 542,
+      "unique_D": 655,
+      "unique_ac": 721,
+      "unique_proteins": 1108
+    },
+    {
+      "mmseqs_families": 772,
+      "replicated_ac_triplets": 1069,
+      "replicated_unique_ac": 480,
+      "split": "train_fit_internal",
+      "triplets": 1412,
+      "unique_A": 539,
+      "unique_C": 519,
+      "unique_D": 624,
+      "unique_ac": 684,
+      "unique_proteins": 1072
+    },
+    {
+      "mmseqs_families": 293,
+      "replicated_ac_triplets": 115,
+      "replicated_unique_ac": 102,
+      "split": "train_dev_internal",
+      "triplets": 157,
+      "unique_A": 127,
+      "unique_C": 135,
+      "unique_D": 134,
+      "unique_ac": 143,
+      "unique_proteins": 335
+    },
+    {
+      "mmseqs_families": 215,
+      "replicated_ac_triplets": 133,
+      "replicated_unique_ac": 78,
+      "split": "train_ineligible_unpermuted",
+      "triplets": 181,
+      "unique_A": 121,
+      "unique_C": 111,
+      "unique_D": 131,
+      "unique_ac": 115,
+      "unique_proteins": 271
+    },
+    {
+      "mmseqs_families": 94,
+      "replicated_ac_triplets": 96,
+      "replicated_unique_ac": 56,
+      "split": "protein_unseen_family_seen",
+      "triplets": 152,
+      "unique_A": 94,
+      "unique_C": 84,
+      "unique_D": 103,
+      "unique_ac": 88,
+      "unique_proteins": 216
+    },
+    {
+      "mmseqs_families": 527,
+      "replicated_ac_triplets": 436,
+      "replicated_unique_ac": 255,
+      "split": "family_unseen",
+      "triplets": 652,
+      "unique_A": 391,
+      "unique_C": 327,
+      "unique_D": 368,
+      "unique_ac": 389,
+      "unique_proteins": 713
+    },
+    {
+      "mmseqs_families": 53,
+      "replicated_ac_triplets": 202,
+      "replicated_unique_ac": 91,
+      "split": "dropped_mixed_family",
+      "triplets": 332,
+      "unique_A": 122,
+      "unique_C": 107,
+      "unique_D": 124,
+      "unique_ac": 164,
+      "unique_proteins": 198
+    },
+    {
+      "mmseqs_families": 200,
+      "replicated_ac_triplets": 235,
+      "replicated_unique_ac": 143,
+      "split": "dropped_mixed_protein",
+      "triplets": 408,
+      "unique_A": 198,
+      "unique_C": 170,
+      "unique_D": 194,
+      "unique_ac": 236,
+      "unique_proteins": 388
+    },
+    {
+      "mmseqs_families": 65,
+      "replicated_ac_triplets": 41,
+      "replicated_unique_ac": 21,
+      "split": "dropped_pdb_overlap",
+      "triplets": 69,
+      "unique_A": 51,
+      "unique_C": 44,
+      "unique_D": 55,
+      "unique_ac": 42,
+      "unique_proteins": 115
+    },
+    {
+      "mmseqs_families": 4,
+      "replicated_ac_triplets": 2,
+      "replicated_unique_ac": 2,
+      "split": "dropped_family_seen_after_eligible",
+      "triplets": 2,
+      "unique_A": 2,
+      "unique_C": 1,
+      "unique_D": 1,
+      "unique_ac": 2,
+      "unique_proteins": 4
+    },
+    {
+      "mmseqs_families": 455,
+      "replicated_ac_triplets": 532,
+      "replicated_unique_ac": 311,
+      "split": "replicated_subset_all_assigned_tests",
+      "triplets": 532,
+      "unique_A": 312,
+      "unique_C": 269,
+      "unique_D": 327,
+      "unique_ac": 311,
+      "unique_proteins": 634
+    },
+    {
+      "mmseqs_families": 79,
+      "replicated_ac_triplets": 96,
+      "replicated_unique_ac": 56,
+      "split": "replicated_protein_unseen_family_seen",
+      "triplets": 96,
+      "unique_A": 62,
+      "unique_C": 56,
+      "unique_D": 76,
+      "unique_ac": 56,
+      "unique_proteins": 154
+    },
+    {
+      "mmseqs_families": 376,
+      "replicated_ac_triplets": 436,
+      "replicated_unique_ac": 255,
+      "split": "replicated_family_unseen",
+      "triplets": 436,
+      "unique_A": 250,
+      "unique_C": 213,
+      "unique_D": 251,
+      "unique_ac": 255,
+      "unique_proteins": 480
+    }
+  ],
+  "train_matched_random_bce_rows": 2824,
+  "train_random_pair_conflicts": 0,
+  "train_structure_bce_rows": 2824,
+  "train_structure_full2124_bce_rows": 3500,
+  "train_structure_pair_conflicts": 0,
+  "unseen_frac_target": 0.15
+}

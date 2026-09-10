@@ -1,0 +1,413 @@
+{
+  "protocol": {
+    "model": "published PLM-Interact humanV12; no new model inference",
+    "primary_cohort": "core 3-24 chains; pair tokens <=1024; exact STRING-positive overlap removed; IntAct direct conflicts removed",
+    "graph_distance": "not estimable: A-C pairs were selected as open wedges A-B-C and therefore have d_graph=2 by construction",
+    "uncertainty": "two-way cluster-robust by MMseqs50 families of A and C"
+  },
+  "cohort_counts": {
+    "all": 6051,
+    "exact_string_positive_overlap": 344,
+    "truncated": 625,
+    "core_pre_intact": 2488,
+    "intact_direct_conflicts_removed": 8,
+    "primary_clean_core": 2480,
+    "primary_human": 264
+  },
+  "5a_training_exposure": {
+    "mmseqs_query_sequences_with_hit": 3664,
+    "mmseqs_query_sequences_total": 5654,
+    "all": {
+      "n": 6051,
+      "mean": 0.7978,
+      "median": 0.9996,
+      "frac_ge_0.5": 0.7984,
+      "ci95": [
+        0.7787,
+        0.8168
+      ]
+    },
+    "exact_string_positive": {
+      "n": 344,
+      "mean": 0.9868,
+      "median": 0.9999,
+      "frac_ge_0.5": 0.9884,
+      "ci95": [
+        0.9548,
+        0.9971
+      ]
+    },
+    "no_exact_string_positive": {
+      "n": 5707,
+      "mean": 0.7864,
+      "median": 0.9995,
+      "frac_ge_0.5": 0.7869,
+      "ci95": [
+        0.7663,
+        0.8062
+      ]
+    },
+    "primary_clean_core": {
+      "n": 2480,
+      "mean": 0.711,
+      "median": 0.9976,
+      "frac_ge_0.5": 0.7137,
+      "ci95": [
+        0.6766,
+        0.7482
+      ]
+    },
+    "by_endpoint_train_familiarity": {
+      "0-20": {
+        "n": 1514,
+        "mean": 0.6132,
+        "median": 0.9726,
+        "frac_ge_0.5": 0.6143,
+        "ci95": [
+          0.5627,
+          0.6634
+        ]
+      },
+      "20-40": {
+        "n": 382,
+        "mean": 0.8428,
+        "median": 0.9997,
+        "frac_ge_0.5": 0.8482,
+        "ci95": [
+          0.7888,
+          0.8931
+        ]
+      },
+      "40-60": {
+        "n": 179,
+        "mean": 0.913,
+        "median": 0.9998,
+        "frac_ge_0.5": 0.9218,
+        "ci95": [
+          0.8556,
+          0.9591
+        ]
+      },
+      "60-80": {
+        "n": 83,
+        "mean": 0.9375,
+        "median": 0.9999,
+        "frac_ge_0.5": 0.9398,
+        "ci95": [
+          0.8613,
+          0.9751
+        ]
+      },
+      "80-100": {
+        "n": 322,
+        "mean": 0.8438,
+        "median": 0.9996,
+        "frac_ge_0.5": 0.8478,
+        "ci95": [
+          0.7855,
+          0.8945
+        ]
+      }
+    }
+  },
+  "5b_complex_size": {
+    "primary_and_exploratory": {
+      "3_10": {
+        "n": 543,
+        "mean": 0.6341,
+        "median": 0.9757,
+        "frac_ge_0.5": 0.6372,
+        "ci95": [
+          0.5837,
+          0.6875
+        ]
+      },
+      "11_24": {
+        "n": 1937,
+        "mean": 0.7325,
+        "median": 0.9985,
+        "frac_ge_0.5": 0.7352,
+        "ci95": [
+          0.6901,
+          0.7758
+        ]
+      },
+      "gt24": {
+        "n": 2643,
+        "mean": 0.9019,
+        "median": 0.9998,
+        "frac_ge_0.5": 0.9012,
+        "ci95": [
+          0.8855,
+          0.9151
+        ]
+      }
+    },
+    "gt24_status": "exploratory Structure-C; excluded from primary regression"
+  },
+  "5c_structural_proximity": {
+    "primary_by_min_heavy": {
+      "8-15 A": {
+        "n": 534,
+        "mean": 0.6985,
+        "median": 0.9969,
+        "frac_ge_0.5": 0.6985,
+        "ci95": [
+          0.645,
+          0.7471
+        ]
+      },
+      "15-40 A": {
+        "n": 1303,
+        "mean": 0.7239,
+        "median": 0.9979,
+        "frac_ge_0.5": 0.7291,
+        "ci95": [
+          0.6891,
+          0.7657
+        ]
+      },
+      ">=40 A": {
+        "n": 643,
+        "mean": 0.6952,
+        "median": 0.9974,
+        "frac_ge_0.5": 0.6952,
+        "ci95": [
+          0.6389,
+          0.7462
+        ]
+      }
+    },
+    "spearman_min_heavy_score": -0.0351,
+    "spearman_min_cb_score": -0.0213
+  },
+  "5d_intact_association": {
+    "query_qc": {
+      "complete_pairs": 2488,
+      "error_pairs": 0
+    },
+    "coverage_in_core_pre_intact": 2488,
+    "by_class": {
+      "no_recorded_association": {
+        "n": 2355,
+        "mean": 0.7042,
+        "median": 0.9972,
+        "frac_ge_0.5": 0.7074,
+        "ci95": [
+          0.6687,
+          0.7434
+        ]
+      },
+      "association": {
+        "n": 4,
+        "mean": 0.5727,
+        "median": 0.6426,
+        "frac_ge_0.5": 0.5,
+        "ci95": [
+          0.1235,
+          0.8765
+        ]
+      },
+      "other_intact": {
+        "n": 121,
+        "mean": 0.8475,
+        "median": 0.9996,
+        "frac_ge_0.5": 0.843,
+        "ci95": [
+          0.762,
+          0.9
+        ]
+      },
+      "direct_conflict": {
+        "n": 8,
+        "mean": 0.9974,
+        "median": 0.9997,
+        "frac_ge_0.5": 1.0,
+        "ci95": [
+          0.6756,
+          1.0
+        ]
+      }
+    },
+    "interpretation_guard": "no_recorded_association means no positive record in the targeted IntAct query, not experimentally proven absence"
+  },
+  "5e_multivariable": {
+    "n": 2480,
+    "outcome": "published PLM-Interact score >= 0.5",
+    "cluster": "two-way MMseqs50 family of A and C",
+    "association_in_model": false,
+    "association_n": 4,
+    "scaling": {
+      "log_complex_size": {
+        "mean": 2.63602,
+        "sd": 0.45796
+      },
+      "log_min_heavy": {
+        "mean": 3.25337,
+        "sd": 0.60984
+      },
+      "train_familiarity": {
+        "mean": 0.23287,
+        "sd": 0.34414
+      },
+      "ac_3mer_similarity": {
+        "mean": 0.0255,
+        "sd": 0.03344
+      },
+      "log_pair_length": {
+        "mean": 5.97317,
+        "sd": 0.53396
+      },
+      "log1p_replicate_pdb": {
+        "mean": 1.28133,
+        "sd": 0.7177
+      },
+      "log1p_bridge_contacts": {
+        "mean": 2.54916,
+        "sd": 1.37353
+      }
+    },
+    "coefficients": [
+      {
+        "term": "intercept",
+        "coef_log_odds": 1.2259,
+        "se_two_way_family": 0.1002,
+        "ci95": [
+          1.0295,
+          1.4223
+        ],
+        "odds_ratio": 3.4071
+      },
+      {
+        "term": "log_complex_size",
+        "coef_log_odds": 0.1084,
+        "se_two_way_family": 0.0747,
+        "ci95": [
+          -0.038,
+          0.2548
+        ],
+        "odds_ratio": 1.1145
+      },
+      {
+        "term": "log_min_heavy",
+        "coef_log_odds": -0.1665,
+        "se_two_way_family": 0.0583,
+        "ci95": [
+          -0.2808,
+          -0.0521
+        ],
+        "odds_ratio": 0.8466
+      },
+      {
+        "term": "train_familiarity",
+        "coef_log_odds": 0.9368,
+        "se_two_way_family": 0.134,
+        "ci95": [
+          0.6742,
+          1.1994
+        ],
+        "odds_ratio": 2.5518
+      },
+      {
+        "term": "ac_3mer_similarity",
+        "coef_log_odds": 0.6024,
+        "se_two_way_family": 0.172,
+        "ci95": [
+          0.2653,
+          0.9395
+        ],
+        "odds_ratio": 1.8264
+      },
+      {
+        "term": "log_pair_length",
+        "coef_log_odds": -0.3295,
+        "se_two_way_family": 0.0912,
+        "ci95": [
+          -0.5081,
+          -0.1508
+        ],
+        "odds_ratio": 0.7193
+      },
+      {
+        "term": "log1p_replicate_pdb",
+        "coef_log_odds": 0.1832,
+        "se_two_way_family": 0.066,
+        "ci95": [
+          0.0538,
+          0.3127
+        ],
+        "odds_ratio": 1.2011
+      },
+      {
+        "term": "log1p_bridge_contacts",
+        "coef_log_odds": -0.2629,
+        "se_two_way_family": 0.068,
+        "ci95": [
+          -0.3961,
+          -0.1297
+        ],
+        "odds_ratio": 0.7688
+      },
+      {
+        "term": "human",
+        "coef_log_odds": -1.1719,
+        "se_two_way_family": 0.4462,
+        "ci95": [
+          -2.0464,
+          -0.2974
+        ],
+        "odds_ratio": 0.3098
+      }
+    ],
+    "marginal_effects": [
+      {
+        "term": "log_complex_size",
+        "P_reference": 0.7143,
+        "P_plus1sd_or_on": 0.7336,
+        "delta_probability": 0.0194
+      },
+      {
+        "term": "log_min_heavy",
+        "P_reference": 0.7138,
+        "P_plus1sd_or_on": 0.6829,
+        "delta_probability": -0.0309
+      },
+      {
+        "term": "train_familiarity",
+        "P_reference": 0.7297,
+        "P_plus1sd_or_on": 0.865,
+        "delta_probability": 0.1354
+      },
+      {
+        "term": "ac_3mer_similarity",
+        "P_reference": 0.7144,
+        "P_plus1sd_or_on": 0.8106,
+        "delta_probability": 0.0962
+      },
+      {
+        "term": "log_pair_length",
+        "P_reference": 0.7154,
+        "P_plus1sd_or_on": 0.6523,
+        "delta_probability": -0.0631
+      },
+      {
+        "term": "log1p_replicate_pdb",
+        "P_reference": 0.7165,
+        "P_plus1sd_or_on": 0.7489,
+        "delta_probability": 0.0323
+      },
+      {
+        "term": "log1p_bridge_contacts",
+        "P_reference": 0.7169,
+        "P_plus1sd_or_on": 0.6667,
+        "delta_probability": -0.0502
+      },
+      {
+        "term": "human",
+        "P_reference": 0.7254,
+        "P_plus1sd_or_on": 0.4967,
+        "delta_probability": -0.2287
+      }
+    ]
+  }
+}

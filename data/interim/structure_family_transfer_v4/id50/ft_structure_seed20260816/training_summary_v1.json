@@ -1,0 +1,34 @@
+{
+  "best_dev_auprc": 0.8662,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2805,
+      "dev_loss": 0.6122,
+      "dev_auprc": 0.7146,
+      "steps": 105
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.413,
+      "dev_loss": 0.4949,
+      "dev_auprc": 0.8336,
+      "steps": 210
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1633,
+      "dev_loss": 0.4765,
+      "dev_auprc": 0.8662,
+      "steps": 315
+    }
+  ],
+  "train_rows": 3358,
+  "dev_rows": 372,
+  "freeze_esm": false,
+  "lr": 1e-05,
+  "head_lr_scale": 10.0,
+  "epochs_requested": 3,
+  "fixed_epochs": false,
+  "skip_eval": false
+}

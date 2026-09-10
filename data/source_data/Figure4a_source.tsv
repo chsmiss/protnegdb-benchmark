@@ -1,0 +1,6 @@
+group	n	fraction	lo	hi	color
+Random A–R	2000	0.3245	0.3043	0.3453	#9AA4AD
+Reconstituted direct	298	0.1611	0.1237	0.2071	#C39755
+Cell binary / proximity	145	0.4207	0.3434	0.5021	#6F91AF
+Co-complex association	119	0.5294	0.4402	0.6168	#9284AC
+Structural clean non-contact	2480	0.7137	0.6956	0.7312	#C87869

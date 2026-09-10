@@ -1,0 +1,189 @@
+{
+  "status": "mint_sprint_neg_semantics_v1",
+  "definition": "P(score_structural > score_experimental) uses Mann-Whitney U / (n_s*n_e), i.e. P(>) + 0.5 P(tie), matching Figure 6.",
+  "cohorts": {
+    "negatome_direct": "Figure 4 clean experimental direct; n=443",
+    "protneg_direct": "Figure 6 independent ProtNeg direct; n=104",
+    "structural_clean": "Figure 6 structural clean-core noncontact; n=2480"
+  },
+  "models": {
+    "PLM-Interact": {
+      "model": "PLM-Interact",
+      "score_sets": {
+        "negatome_direct": {
+          "n": 443,
+          "mean": 0.2481,
+          "median": 0.0006,
+          "frac_ge_0.5": 0.246,
+          "frac_ge_0.5_ci95": [
+            0.2082,
+            0.2882
+          ],
+          "n_ge_0.5": 109
+        },
+        "protneg_direct": {
+          "n": 104,
+          "mean": 0.2492,
+          "median": 0.0079,
+          "frac_ge_0.5": 0.25,
+          "frac_ge_0.5_ci95": [
+            0.1767,
+            0.3411
+          ],
+          "n_ge_0.5": 26
+        },
+        "structural_clean": {
+          "n": 2480,
+          "mean": 0.711,
+          "median": 0.9976,
+          "frac_ge_0.5": 0.7137,
+          "frac_ge_0.5_ci95": [
+            0.6956,
+            0.7312
+          ],
+          "n_ge_0.5": 1770
+        }
+      },
+      "comparisons": {
+        "structural_clean_vs_negatome_direct": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "n_pairs": 1098640,
+          "n_structural_gt": 898491,
+          "n_tie": 234,
+          "n_structural_lt": 199915,
+          "P_structural_score_gt_experimental": 0.8179,
+          "P_structural_score_gt_experimental_strict": 0.8178,
+          "mannwhitney_u_over_n": 0.8179,
+          "cliffs_delta": 0.6359
+        },
+        "structural_clean_vs_protneg_direct": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "n_pairs": 257920,
+          "n_structural_gt": 205235,
+          "n_tie": 34,
+          "n_structural_lt": 52651,
+          "P_structural_score_gt_experimental": 0.7958,
+          "P_structural_score_gt_experimental_strict": 0.7957,
+          "mannwhitney_u_over_n": 0.7958,
+          "cliffs_delta": 0.5916
+        }
+      },
+      "missing_scores": {}
+    },
+    "MINT": {
+      "model": "MINT",
+      "score_sets": {
+        "negatome_direct": {
+          "n": 443,
+          "mean": 0.5095,
+          "median": 0.4899,
+          "frac_ge_0.5": 0.474,
+          "frac_ge_0.5_ci95": [
+            0.428,
+            0.5206
+          ],
+          "n_ge_0.5": 210
+        },
+        "protneg_direct": {
+          "n": 104,
+          "mean": 0.506,
+          "median": 0.4987,
+          "frac_ge_0.5": 0.5,
+          "frac_ge_0.5_ci95": [
+            0.4056,
+            0.5944
+          ],
+          "n_ge_0.5": 52
+        },
+        "structural_clean": {
+          "n": 2480,
+          "mean": 0.7166,
+          "median": 0.7264,
+          "frac_ge_0.5": 0.8383,
+          "frac_ge_0.5_ci95": [
+            0.8233,
+            0.8523
+          ],
+          "n_ge_0.5": 2079
+        }
+      },
+      "comparisons": {
+        "structural_clean_vs_negatome_direct": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "n_pairs": 1098640,
+          "n_structural_gt": 855003,
+          "n_tie": 0,
+          "n_structural_lt": 243637,
+          "P_structural_score_gt_experimental": 0.7782,
+          "P_structural_score_gt_experimental_strict": 0.7782,
+          "mannwhitney_u_over_n": 0.7782,
+          "cliffs_delta": 0.5565
+        },
+        "structural_clean_vs_protneg_direct": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "n_pairs": 257920,
+          "n_structural_gt": 201142,
+          "n_tie": 0,
+          "n_structural_lt": 56778,
+          "P_structural_score_gt_experimental": 0.7799,
+          "P_structural_score_gt_experimental_strict": 0.7799,
+          "mannwhitney_u_over_n": 0.7799,
+          "cliffs_delta": 0.5597
+        }
+      },
+      "missing_scores": {}
+    },
+    "SPRINT": {
+      "model": "SPRINT",
+      "score_sets": {
+        "negatome_direct": {
+          "n": 443,
+          "mean": 37.4269,
+          "median": 1.8507
+        },
+        "protneg_direct": {
+          "n": 104,
+          "mean": 29.71,
+          "median": 1.0453
+        },
+        "structural_clean": {
+          "n": 2480,
+          "mean": 23.4829,
+          "median": 0.3795
+        }
+      },
+      "comparisons": {
+        "structural_clean_vs_negatome_direct": {
+          "n_structural": 2480,
+          "n_experimental": 443,
+          "n_pairs": 1098640,
+          "n_structural_gt": 389794,
+          "n_tie": 77,
+          "n_structural_lt": 708769,
+          "P_structural_score_gt_experimental": 0.3548,
+          "P_structural_score_gt_experimental_strict": 0.3548,
+          "mannwhitney_u_over_n": 0.3548,
+          "cliffs_delta": -0.2903
+        },
+        "structural_clean_vs_protneg_direct": {
+          "n_structural": 2480,
+          "n_experimental": 104,
+          "n_pairs": 257920,
+          "n_structural_gt": 99248,
+          "n_tie": 0,
+          "n_structural_lt": 158672,
+          "P_structural_score_gt_experimental": 0.3848,
+          "P_structural_score_gt_experimental_strict": 0.3848,
+          "mannwhitney_u_over_n": 0.3848,
+          "cliffs_delta": -0.2304
+        }
+      },
+      "missing_scores": {}
+    }
+  },
+  "no_training": true
+}

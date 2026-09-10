@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# Frozen layer representations are GitHub Release assets, not Git blobs.
+data/interim/**/layer_cls_v1.npz

@@ -1,0 +1,54 @@
+{
+  "model": "MINT Bernett",
+  "coverage": "full Figure 2 structural core",
+  "crop_seeds": [
+    13,
+    29,
+    47,
+    71,
+    97
+  ],
+  "direction_aggregation": "mean reciprocal direction per seed",
+  "seed_aggregation": "mean pair score across five fixed crop seeds before ranking",
+  "n_triplets": 3365,
+  "n_unique_ac": 1606,
+  "n_unique_pairs": 3964,
+  "p_d_gt_c_macro": 0.5521585720215857,
+  "ci95_unique_ac_bootstrap": [
+    0.5315060709838106,
+    0.5734848484848485
+  ],
+  "median_delta": 0.005105449999999956,
+  "mean_delta": 0.014215477194650815,
+  "per_seed": [
+    {
+      "seed": 13,
+      "p_d_gt_c_macro": 0.5461083437110834,
+      "median_delta": 0.004647280000000031
+    },
+    {
+      "seed": 29,
+      "p_d_gt_c_macro": 0.5532689912826899,
+      "median_delta": 0.0058411649999999815
+    },
+    {
+      "seed": 47,
+      "p_d_gt_c_macro": 0.5579078455790785,
+      "median_delta": 0.005458540000000012
+    },
+    {
+      "seed": 71,
+      "p_d_gt_c_macro": 0.5547945205479452,
+      "median_delta": 0.005370584999999983
+    },
+    {
+      "seed": 97,
+      "p_d_gt_c_macro": 0.5523349937733499,
+      "median_delta": 0.005053025000000044
+    }
+  ],
+  "pair_crop_sd": {
+    "median": 0.0,
+    "mean": 0.009214624571140263
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_rows": 480,
+  "source_unique_pairs": 480,
+  "evidence_semantics_counts": {
+    "biophysical_direct": 50,
+    "other_direct_binding": 143,
+    "association_negative": 287
+  },
+  "manual_verified_negative": 480,
+  "direct_assay_negative": 193,
+  "reliable_reported_taxon_mapping": 271,
+  "score_pairs": 264,
+  "score_pairs_no_truncation": 110,
+  "exact_negatome_pair_overlaps": 5,
+  "exact_string_positive_overlaps_scored": 0,
+  "paired_negative_pairs": 192,
+  "paired_both_no_truncation": 65,
+  "positive_rule": "one same-taxon IntAct MI:0407 strict-direct candidate per negative; prefer both pairs <=1024, then publication/evidence support"
+}

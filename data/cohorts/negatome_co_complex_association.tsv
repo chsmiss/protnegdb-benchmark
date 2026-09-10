@@ -1,0 +1,120 @@
+source	record_id	protein_a	protein_b	taxon_a	taxon_b	assay_raw	assay_ontology	old_historical_class	eligible_common_qc	score	pair_tokens	exact_string_positive_overlap	biophysical_only
+Negatome	NEG:00007	O00167	P09471	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	8.5e-05	895	0	0
+Negatome	NEG:00074	O14763	Q15628	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999857	755	0	0
+Negatome	NEG:00093	O15105	Q13363	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.996899	869	0	0
+Negatome	NEG:00108	O15315	O43542	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999447	733	0	0
+Negatome	NEG:00118	O15530	O95988	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.005253	687	0	0
+Negatome	NEG:00119	O15530	P56277	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	7.9e-05	627	0	0
+Negatome	NEG:00120	O15530	P56279	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.022422	673	0	0
+Negatome	NEG:00148	O43194	Q9UBU3	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.121964	573	0	0
+Negatome	NEG:00153	O43353	P57730	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999685	633	0	0
+Negatome	NEG:00154	O43353	Q5XLA6	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999771	653	0	0
+Negatome	NEG:00171	O43524	Q99576	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.255749	810	0	0
+Negatome	NEG:00173	O43542	O43543	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999568	629	0	0
+Negatome	NEG:00174	O43542	O75771	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999559	677	0	0
+Negatome	NEG:00178	O43559	P61587	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.004431	739	0	0
+Negatome	NEG:00273	O75360	Q04724	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.995378	999	0	0
+Negatome	NEG:00290	O75414	P04637	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.886319	582	0	0
+Negatome	NEG:00309	O75791	Q07666	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.998139	776	0	0
+Negatome	NEG:00327	O94907	P04628	9606.0	9606.0	MI:0019 - coimmunoprecipitation, MI:0110 - text mining | MI:0019 - coimunoprecipitation, MI:0110 - text mining	co_complex_association	association	1	0.00088	639	0	0
+Negatome	NEG:00328	O94907	Q14696	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	7.9e-05	503	0	0
+Negatome	NEG:00329	O94907	Q9BQB4	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000251	482	0	0
+Negatome	NEG:00332	O95361	Q9ULZ3	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.177243	762	0	0
+Negatome	NEG:00388	P01589	P40933	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.976209	437	0	0
+Negatome	NEG:00441	P04049	Q7L3B6	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.016343	988	0	0
+Negatome	NEG:00450	P04233	Q8TCT9	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.00322	676	0	0
+Negatome	NEG:00451	P04234	P43403	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999675	793	0	0
+Negatome	NEG:00459	P04637	P56597	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999781	608	0	0
+Negatome	NEG:00460	P04637	P63244	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999931	713	0	0
+Negatome	NEG:00462	P04637	Q13232	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.011099	565	0	0
+Negatome	NEG:00466	P04792	P06730	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.008979	425	0	0
+Negatome	NEG:00468	P04792	P23588	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.000149	819	0	0
+Negatome	NEG:00469	P04792	P60842	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.005784	614	0	0
+Negatome	NEG:00471	P04792	Q9BUB5	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.984824	673	0	0
+Negatome	NEG:00481	P05230	P34741	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.512368	359	0	0
+Negatome	NEG:00505	P06493	P24864	9606.0	9606.0	MI:0071 - molecular sieving	co_complex_association	association	1	0.999924	710	0	0
+Negatome	NEG:00512	P06730	Q9HB40	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.000812	672	0	0
+Negatome	NEG:00515	P06753	P60981	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.00022	453	0	0
+Negatome	NEG:00526	P07203	P09917	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.001458	880	0	0
+Negatome	NEG:00569	P08621	Q05519	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.999436	924	0	0
+Negatome	NEG:00584	P09693	P43403	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999423	804	0	0
+Negatome	NEG:00605	P10398	P10415	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.99412	848	0	0
+Negatome	NEG:00606	P10398	Q07817	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.950255	842	0	0
+Negatome	NEG:00607	P10415	P54826	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000373	587	0	0
+Negatome	NEG:00638	P12956	P16104	9606.0	9606.0	MI:0006 - anti bait coimmunoprecipitation	co_complex_association	association	1	0.999548	755	0	0
+Negatome	NEG:00656	P14373	P17612	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.80757	867	0	0
+Negatome	NEG:00680	P15559	Q00987	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.040239	768	0	0
+Negatome	NEG:00684	P15976	Q05513	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000349	1008	0	0
+Negatome	NEG:00794	P19784	Q13526	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.951652	516	0	0
+Negatome	NEG:00805	P20338	P21731	9606.0	9606.0	MI:0006 - anti bait coimmunoprecipitation	co_complex_association	association	1	0.001303	564	0	0
+Negatome	NEG:00827	P21917	Q53G59	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000155	990	0	0
+Negatome	NEG:00848	P24941	Q14186	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999746	711	0	0
+Negatome	NEG:00854	P25311	P61769	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.999726	420	0	0
+Negatome	NEG:00858	P25815	P36871	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.00014	660	0	0
+Negatome	NEG:00861	P25942	Q13077	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.99969	696	0	0
+Negatome	NEG:00862	P25942	Q9BUZ4	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.999712	750	0	0
+Negatome	NEG:00885	P26038	Q9H204	9606.0	9606.0	MI:0004 - affinity chromatography technology, MI:0110 - text mmining	co_complex_association	association	1	0.001213	758	0	0
+Negatome	NEG:00898	P27037	Q13347	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	9.7e-05	841	0	0
+Negatome	NEG:00899	P27348	P31749	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999617	728	0	0
+Negatome	NEG:00901	P27361	Q49A26	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000228	935	0	0
+Negatome	NEG:00902	P27361	Q9BV47	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.022038	593	0	0
+Negatome	NEG:00908	P27701	Q03405	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.018425	605	0	0
+Negatome	NEG:00918	P28482	Q8TAX0	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000203	629	0	0
+Negatome	NEG:00962	P31749	P31946	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999645	729	0	0
+Negatome	NEG:00982	P35222	P35638	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.994031	953	0	0
+Negatome	NEG:01092	P43403	Q6PIZ9	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.983739	808	0	0
+Negatome	NEG:01097	P45983	Q49A26	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000336	983	0	0
+Negatome	NEG:01121	P49023	Q9HBI1	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999884	958	0	0
+Negatome	NEG:01133	P49768	Q96IZ0	9606.0	9606.0	MI:0006 - anti bait coimmunoprecipitation	co_complex_association	association	1	0.246818	810	0	0
+Negatome	NEG:01156	P51572	Q07812	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.995951	441	0	0
+Negatome	NEG:01184	P54826	P55957	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	7.8e-05	543	0	0
+Negatome	NEG:01185	P54826	Q07812	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000114	540	0	0
+Negatome	NEG:01186	P54826	Q92934	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	5.7e-05	516	0	0
+Negatome	NEG:01214	P60228	Q8IUI8	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.00166	890	0	0
+Negatome	NEG:01215	P60709	Q8NHR9	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.431045	507	0	0
+Negatome	NEG:01221	P61019	Q7L099	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.587849	684	0	0
+Negatome	NEG:01230	P61587	Q8WU20	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.009589	755	0	0
+Negatome	NEG:01317	P78396	Q14186	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999766	878	0	0
+Negatome	NEG:01328	P84022	Q01094	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999756	865	0	0
+Negatome	NEG:01330	P84022	Q13547	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999389	910	0	0
+Negatome	NEG:01343	P98170	Q13077	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999767	916	0	0
+Negatome	NEG:01348	Q00688	Q13330	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.00047	942	0	0
+Negatome	NEG:01352	Q01094	Q06546	9606.0	9606.0	MI:0006 - anti bait coimmunoprecipitation	co_complex_association	association	1	0.028631	894	0	0
+Negatome	NEG:01353	Q01094	Q06547	9606.0	9606.0	MI:0006 - anti bait coimmunoprecipitation	co_complex_association	association	1	0.999444	835	0	0
+Negatome	NEG:01354	Q01094	Q15796	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999662	907	0	0
+Negatome	NEG:01398	Q05519	Q8WU68	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.989758	707	0	0
+Negatome	NEG:01409	Q06330	Q06587	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.986493	909	0	0
+Negatome	NEG:01416	Q07021	Q13952	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000496	743	0	0
+Negatome	NEG:01423	Q07817	Q7Z434	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999891	776	0	0
+Negatome	NEG:01428	Q08117	Q13547	9606.0	9606.0	MI:0019 - coimmunoprecipitation, MI:0110 -text mining	co_complex_association	association	1	0.982607	682	0	0
+Negatome	NEG:01451	Q13077	Q96CA5	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.967853	717	0	0
+Negatome	NEG:01454	Q13158	Q8IUC6	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.993788	923	0	0
+Negatome	NEG:01455	Q13158	Q8WXF8	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.99965	537	0	0
+Negatome	NEG:01457	Q13239	Q6PIZ9	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.076799	465	0	0
+Negatome	NEG:01458	Q13242	Q16629	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999473	462	0	0
+Negatome	NEG:01459	Q13309	Q16526	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999854	1013	0	0
+Negatome	NEG:01460	Q13309	Q49AN0	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999763	1020	0	0
+Negatome	NEG:01467	Q13485	Q9UM13	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.849466	740	0	0
+Negatome	NEG:01474	Q13571	Q6PIZ9	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000174	451	0	0
+Negatome	NEG:01478	Q13651	Q9GZX6	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999004	760	0	0
+Negatome	NEG:01500	Q14653	Q9Y4K3	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999519	952	0	0
+Negatome	NEG:01505	Q14790	Q8WXF8	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999795	808	0	0
+Negatome	NEG:01528	Q15750	Q9BYM8	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.999807	1017	0	0
+Negatome	NEG:01531	Q15797	Q9NR31	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.000107	666	0	0
+Negatome	NEG:01532	Q15797	Q9UM13	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999667	653	0	0
+Negatome	NEG:01542	Q16526	Q8NEZ5	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.000343	992	0	0
+Negatome	NEG:01544	Q16526	Q9H469	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.001618	889	0	0
+Negatome	NEG:01546	Q16526	Q9UKC9	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.051514	1012	0	0
+Negatome	NEG:01579	Q49AN0	Q8NEZ5	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.00014	999	0	0
+Negatome	NEG:01581	Q49AN0	Q9H469	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.006825	896	0	0
+Negatome	NEG:01583	Q49AN0	Q9UKC9	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.005562	1019	0	0
+Negatome	NEG:01659	Q6ZNK6	Q9Y4K3	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999777	686	0	0
+Negatome	NEG:01678	Q7Z434	Q8IUD6	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.005136	975	0	0
+Negatome	NEG:01723	Q8TCT9	Q9Y6X1	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.07151	446	0	0
+Negatome	NEG:01734	Q8WXF8	Q92851	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.999599	850	0	0
+Negatome	NEG:01741	Q92575	Q92890	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.997501	818	0	0
+Negatome	NEG:01742	Q92575	Q9UBP5	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.004976	848	0	0
+Negatome	NEG:01763	Q92844	Q9BYM8	9606.0	9606.0	MI:0007 - anti tag coimmunoprecipitation	co_complex_association	association	1	0.954057	938	0	0
+Negatome	NEG:01764	Q92956	Q96B97	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.006561	951	0	0
+Negatome	NEG:01792	Q99497	Q9UBK2	9606.0	9606.0	MI:0019 - coimmunoprecipitation	co_complex_association	association	1	0.977943	990	0	0
+Negatome	NEG:01844	Q9UI95	Q9Y6D9	9606.0	9606.0	MI:0004 - affinity chromatography technologies	co_complex_association	association	1	0.999693	932	0	0

@@ -1,0 +1,168 @@
+{
+  "protocol": {
+    "effect": "within-model P(score_structural > score_experimental)",
+    "threshold": "none; scores are not calibrated across models",
+    "structural_scope": "clean core, <=1024 PLM tokens, no exact STRING-positive or IntAct direct conflict",
+    "experimental_scope": "harmonized reconstituted-direct, sequence-resolved, no exact STRING-positive"
+  },
+  "all_taxa": {
+    "PLM-Interact": {
+      "Negatome": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.9975905,
+        "experimental_median": 0.000287,
+        "p_structural_gt_experimental": 0.868005114743451,
+        "cliffs_delta": 0.736010229486902,
+        "bootstrap_ci95": [
+          0.8454233532691059,
+          0.8891847193656636
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 104,
+        "structural_median": 0.9975905,
+        "experimental_median": 0.0079125,
+        "p_structural_gt_experimental": 0.7957971464019851,
+        "cliffs_delta": 0.5915942928039701,
+        "bootstrap_ci95": [
+          0.7541893804280397,
+          0.8338402411600495
+        ]
+      }
+    },
+    "D-SCRIPT": {
+      "Negatome": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.004543,
+        "experimental_median": 0.004181,
+        "p_structural_gt_experimental": 0.7243072093526738,
+        "cliffs_delta": 0.4486144187053476,
+        "bootstrap_ci95": [
+          0.6913196342552501,
+          0.754974612334921
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 98,
+        "structural_median": 0.004543,
+        "experimental_median": 0.004186499999999999,
+        "p_structural_gt_experimental": 0.6645675608953259,
+        "cliffs_delta": 0.32913512179065174,
+        "bootstrap_ci95": [
+          0.6159598728604345,
+          0.7086308838051348
+        ]
+      }
+    },
+    "Topsy-Turvy": {
+      "Negatome": {
+        "structural_n": 2480,
+        "experimental_n": 298,
+        "structural_median": 0.4973575,
+        "experimental_median": 0.2640255,
+        "p_structural_gt_experimental": 0.6219392725698203,
+        "cliffs_delta": 0.24387854513964058,
+        "bootstrap_ci95": [
+          0.5903895086869452,
+          0.6510670599696905
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 2480,
+        "experimental_n": 98,
+        "structural_median": 0.4973575,
+        "experimental_median": 0.2904455,
+        "p_structural_gt_experimental": 0.6051534726793943,
+        "cliffs_delta": 0.2103069453587887,
+        "bootstrap_ci95": [
+          0.5495343873436471,
+          0.6547469038018433
+        ]
+      }
+    }
+  },
+  "human_only": {
+    "PLM-Interact": {
+      "Negatome": {
+        "structural_n": 264,
+        "experimental_n": 298,
+        "structural_median": 0.999478,
+        "experimental_median": 0.000287,
+        "p_structural_gt_experimental": 0.9000152532031727,
+        "cliffs_delta": 0.8000305064063453,
+        "bootstrap_ci95": [
+          0.8753783112161887,
+          0.9246579151413463
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 264,
+        "experimental_n": 56,
+        "structural_median": 0.999478,
+        "experimental_median": 0.0086135,
+        "p_structural_gt_experimental": 0.8384063852813853,
+        "cliffs_delta": 0.6768127705627707,
+        "bootstrap_ci95": [
+          0.7774917140151516,
+          0.8922559862012986
+        ]
+      }
+    },
+    "D-SCRIPT": {
+      "Negatome": {
+        "structural_n": 264,
+        "experimental_n": 298,
+        "structural_median": 0.0042710000000000005,
+        "experimental_median": 0.004181,
+        "p_structural_gt_experimental": 0.6855742830994509,
+        "cliffs_delta": 0.3711485661989018,
+        "bootstrap_ci95": [
+          0.6413191796318893,
+          0.728141524303437
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 264,
+        "experimental_n": 52,
+        "structural_median": 0.0042710000000000005,
+        "experimental_median": 0.004194,
+        "p_structural_gt_experimental": 0.5823135198135199,
+        "cliffs_delta": 0.16462703962703973,
+        "bootstrap_ci95": [
+          0.5112115748834498,
+          0.6567999708624708
+        ]
+      }
+    },
+    "Topsy-Turvy": {
+      "Negatome": {
+        "structural_n": 264,
+        "experimental_n": 298,
+        "structural_median": 0.6173625,
+        "experimental_median": 0.2640255,
+        "p_structural_gt_experimental": 0.747031980882652,
+        "cliffs_delta": 0.494063961765304,
+        "bootstrap_ci95": [
+          0.7076467803030303,
+          0.788010028981086
+        ]
+      },
+      "ProtNeg": {
+        "structural_n": 264,
+        "experimental_n": 52,
+        "structural_median": 0.6173625,
+        "experimental_median": 0.2751945,
+        "p_structural_gt_experimental": 0.7276733682983683,
+        "cliffs_delta": 0.4553467365967365,
+        "bootstrap_ci95": [
+          0.6441834207459208,
+          0.8057400932400932
+        ]
+      }
+    }
+  }
+}

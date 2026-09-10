@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the ProtNegDB manuscript and this versioned benchmark package."
+title: "ProtNegDB Benchmark"
+type: dataset
+version: "1.0.0"
+date-released: 2026-09-10
+authors:
+  - family-names: Cheng
+    given-names: Hansen
+  - family-names: Sun
+    given-names: Chengyu
+  - family-names: Ye
+    given-names: Chuan
+  - family-names: Zhao
+    given-names: Dongyu
+    affiliation: Peking University
+repository-code: "https://github.com/chsmiss/protnegdb-benchmark"
+url: "http://protnegdb.bjmu.edu.cn/"
+abstract: >-
+  Frozen evaluation cohorts, model scores, figure source data and analysis
+  code for context-matched direct-partner discrimination in the ProtNegDB
+  study. This package is distinct from the complete evidence-resolved
+  negative protein-protein interaction resource.
+keywords:
+  - protein-protein interaction
+  - negative interaction evidence
+  - protein language model
+  - structural bioinformatics
+  - benchmark
+license: MIT

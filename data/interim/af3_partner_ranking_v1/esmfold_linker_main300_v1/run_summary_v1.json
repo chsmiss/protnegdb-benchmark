@@ -1,0 +1,11 @@
+{
+  "model_id": "facebook/esmfold_v1",
+  "linker_aa": "G",
+  "linker_len": 25,
+  "chunk_size": 64,
+  "num_recycles": 4,
+  "gpu": "0",
+  "n_pairs": 120,
+  "n_ok": 120,
+  "n_error": 0
+}

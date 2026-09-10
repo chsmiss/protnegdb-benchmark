@@ -1,0 +1,13 @@
+{
+  "n_triplets": 2405,
+  "n_train_eligible": 1865,
+  "n_family_unseen": 540,
+  "n_directed_pairs": 7215,
+  "family_disjoint": true,
+  "skipped": {
+    "missing_ad_ac": 0,
+    "missing_r_seq": 0,
+    "r_unpermuted": 0
+  },
+  "note": "Independent literature assay negatives (Negatome 443 + ProtNeg-104 from 480 papers) are not this cohort. 1000-pilot matched C is a neighbor-C construction, not the Codex literature-negative FPR set."
+}

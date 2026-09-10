@@ -1,0 +1,215 @@
+{
+  "coverage": {
+    "mmseqs50_families": 1645,
+    "unique_anchor_A": 1322,
+    "unique_negative_C": 1143,
+    "unique_pdb": 1063,
+    "unique_positive_D": 1385,
+    "unique_proteins": 2365,
+    "unique_taxon": 202
+  },
+  "did_not_touch_test_v2": true,
+  "did_not_train": true,
+  "evidence_strength": {
+    "conflict_note": "zero conflicts among core A-C is a construction filter, not independent validation",
+    "core_ac": 3051,
+    "direct_positive_conflict_status_counts": {
+      "no_PDB_contact_in_exact_pair_aggregate_external_sources_pending": 3051
+    },
+    "known_direct_positive_conflicts": 0,
+    "pdb_index_direct_contact_conflicts": 0,
+    "pdb_index_without_other_direct_contact": 3051,
+    "replicated_fraction": 0.62078,
+    "replicated_ge2_pdb": 1894
+  },
+  "figure_notes": {
+    "figure1_shrinkage": "task-aware filtering, not data loss",
+    "figure2_sim_CD": "hardness of the negative; not test-to-train transfer",
+    "figure3_sim_test_train": "transfer of hard-negative supervision; separate question",
+    "gt24": "exploratory evaluation only; excluded from primary hard-negative training"
+  },
+  "label_semantics": "assembly_context_direct_noncontact_not_universal_nonbinder",
+  "original_plminteract": {
+    "all_pool_by_role": {
+      "ac_negative": {
+        "frac_ge_0.5": 0.79838,
+        "mean": 0.797759,
+        "median": 0.999577,
+        "n": 6051
+      },
+      "ad_positive": {
+        "frac_ge_0.5": 0.858916,
+        "mean": 0.857033,
+        "median": 0.999737,
+        "n": 19818
+      },
+      "random_unlabeled": {
+        "frac_ge_0.5": 0.3245,
+        "mean": 0.326398,
+        "median": 0.002686,
+        "n": 2000
+      }
+    },
+    "core_ac_scores": {
+      "frac_ge_0.5": 0.703704,
+      "mean": 0.701249,
+      "median": 0.997571,
+      "n": 3051
+    },
+    "core_ad_scores": {
+      "frac_ge_0.5": 0.767525,
+      "mean": 0.766565,
+      "median": 0.998782,
+      "n": 7803
+    },
+    "core_triplets": {
+      "mean_delta": 0.028574,
+      "median_delta": 1.4e-05,
+      "n_triplets": 3365,
+      "n_unique_ac": 1606,
+      "row_p_d_gt_c": 0.552155,
+      "tie_fraction": 0.007132,
+      "unique_ac_p_d_gt_c": 0.552823
+    },
+    "random_unlabeled": {
+      "frac_ge_0.5": 0.3245,
+      "mean": 0.326398,
+      "median": 0.002686,
+      "n": 2000
+    },
+    "replicated_triplets": {
+      "mean_delta": 0.027265,
+      "median_delta": 8e-06,
+      "n_triplets": 2329,
+      "n_unique_ac": 1050,
+      "row_p_d_gt_c": 0.535423,
+      "tie_fraction": 0.007729,
+      "unique_ac_p_d_gt_c": 0.532992
+    },
+    "seqid_CD_bins": [
+      {
+        "bin": "lt20",
+        "hi": 0.2,
+        "lo": 0.0,
+        "mean_delta": null,
+        "median_delta": null,
+        "n_triplets": 0,
+        "n_unique_ac": 0,
+        "row_p_d_gt_c": null,
+        "tie_fraction": null,
+        "unique_ac_p_d_gt_c": null
+      },
+      {
+        "bin": "20_30",
+        "hi": 0.3,
+        "lo": 0.2,
+        "mean_delta": 0.050347,
+        "median_delta": 1.6e-05,
+        "n_triplets": 1268,
+        "n_unique_ac": 818,
+        "row_p_d_gt_c": 0.555205,
+        "tie_fraction": 0.006309,
+        "unique_ac_p_d_gt_c": 0.545894
+      },
+      {
+        "bin": "30_40",
+        "hi": 0.4,
+        "lo": 0.3,
+        "mean_delta": 0.009616,
+        "median_delta": 1.2e-05,
+        "n_triplets": 1374,
+        "n_unique_ac": 897,
+        "row_p_d_gt_c": 0.532023,
+        "tie_fraction": 0.001456,
+        "unique_ac_p_d_gt_c": 0.546358
+      },
+      {
+        "bin": "40_50",
+        "hi": 0.5,
+        "lo": 0.4,
+        "mean_delta": 0.027576,
+        "median_delta": 3.5e-05,
+        "n_triplets": 373,
+        "n_unique_ac": 276,
+        "row_p_d_gt_c": 0.60992,
+        "tie_fraction": 0.002681,
+        "unique_ac_p_d_gt_c": 0.610386
+      },
+      {
+        "bin": "ge50",
+        "hi": 1.01,
+        "lo": 0.5,
+        "mean_delta": 0.025185,
+        "median_delta": 5e-06,
+        "n_triplets": 350,
+        "n_unique_ac": 244,
+        "row_p_d_gt_c": 0.558571,
+        "tie_fraction": 0.037143,
+        "unique_ac_p_d_gt_c": 0.555396
+      }
+    ],
+    "structure_pilot_three_way": {
+      "dataset": "Structure",
+      "dataset_key": "structure",
+      "model": "PLM-interact",
+      "model_key": "plminteract_base",
+      "n_anchors": 266,
+      "n_blocks": 266,
+      "n_triplets": 300,
+      "p_c_gt_r": 0.94,
+      "p_c_gt_r_ci_high": 0.9633333333333334,
+      "p_c_gt_r_ci_low": 0.912751677852349,
+      "p_d_gt_c": 0.5183333333333333,
+      "p_d_gt_c_ci_high": 0.5700664878757403,
+      "p_d_gt_c_ci_low": 0.4693825132792843,
+      "p_d_gt_r": 0.9666666666666667,
+      "p_d_gt_r_ci_high": 0.9860152043078872,
+      "p_d_gt_r_ci_low": 0.9442419590391095
+    }
+  },
+  "other_models_core_triplets": {
+    "dscript": {
+      "mean_delta": 0.017007,
+      "median_delta": 0.0,
+      "n_triplets": 3337,
+      "n_unique_ac": 1588,
+      "row_p_d_gt_c": 0.516931,
+      "tie_fraction": 0.060533,
+      "unique_ac_p_d_gt_c": 0.5195
+    },
+    "topsy_turvy": {
+      "mean_delta": 0.013244,
+      "median_delta": 0.001066,
+      "n_triplets": 3337,
+      "n_unique_ac": 1588,
+      "row_p_d_gt_c": 0.519329,
+      "tie_fraction": 0.004195,
+      "unique_ac_p_d_gt_c": 0.516452
+    }
+  },
+  "previous_bce_split_v2_not_figure3": {
+    "train_rows": 3173,
+    "unique_labelled_pairs": 3964
+  },
+  "status": "figure12_zero_shot_ledger_not_a_frozen_benchmark",
+  "structural_resource": {
+    "assembly_exceeds_60_chains": 8355,
+    "cap_anchor": 21605,
+    "cap_pdb": 22628,
+    "class_a_total": 91859,
+    "coordinate_candidates": 26597,
+    "core_ac": 3051,
+    "core_ac_11_24": 2344,
+    "core_ac_3_10": 707,
+    "core_ac_with_triplet": 1606,
+    "core_triplets": 3365,
+    "excluded_id_or_sequence": 7028,
+    "excluded_taxonomy": 14001,
+    "gt24_qc_passed_then_capped": 8453,
+    "gt24_share_of_same_taxon_class_a_from_construction_audit": 0.903,
+    "gt24_trimmed": 5453,
+    "qc_passed_before_stratum_cap": 11504,
+    "same_taxon_mapped": 70830,
+    "stratified_mother_pool": 6051
+  }
+}

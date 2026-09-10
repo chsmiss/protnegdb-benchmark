@@ -1,0 +1,80 @@
+{
+  "status": "scaled_candidate_pool_not_frozen_training_data",
+  "parameters": {
+    "target_ac": 8000,
+    "target_ac_large": 3000,
+    "candidate_ac": 100000,
+    "max_chains": 60,
+    "max_file_mb": 50.0,
+    "max_canonical_coverage": 1.2,
+    "max_per_anchor": 8,
+    "max_per_pdb": 30,
+    "max_per_tax": 4000,
+    "top_d": 3,
+    "workers": 48,
+    "seed": "20260806",
+    "v1_changes_vs_v0": [
+      "0.75MB pilot file cap removed (50MB hard cap): full same-taxon Class-A pool eligible",
+      "assembly_size_stratum replaces the flat >10-chain rejection: 3_10 = v0 scope, 11_24 = same QC with CF grade capped at CF-B, gt24 (25-60 chains) = Structure-C/CF-C exploration layer with separate cap",
+      "candidates grouped by structure file; each assembly parsed once with shared chain-pair caches",
+      "multiprocessing coordinate validation; deterministic seed re-ordering before ID assignment",
+      "all other QC, wedge, grading and triplet semantics identical to v0"
+    ]
+  },
+  "metadata_sequences": 18343,
+  "chain_mappings": 965149,
+  "selection_counts": {
+    "aggregate_class_a": 91859,
+    "excluded_id_or_sequence": 7028,
+    "excluded_taxonomy": 14001,
+    "cap_pdb": 22628,
+    "cap_anchor": 21605,
+    "eligible_before_caps": 70830,
+    "coordinate_candidates_selected": 26597
+  },
+  "ac_qc_counts": {
+    "assembly_exceeds_chain_cap": 8355,
+    "Structure-C-provisional|gt24": 8453,
+    "low_canonical_coverage": 1080,
+    "canonical_coverage_exceeds_construct_guardrail": 2438,
+    "short_observed_construct": 668,
+    "low_construct_coverage": 2552,
+    "Structure-A-provisional|11_24": 1532,
+    "Structure-B-provisional|11_24": 812,
+    "Structure-A-provisional|3_10": 526,
+    "Structure-B-provisional|3_10": 181,
+    "ac_accepted": 6051,
+    "ac_rejected": 15093,
+    "ac_trimmed_beyond_target": 5453
+  },
+  "triplet_counts": {
+    "ad_similarity_low_or_unresolved": 24954,
+    "ad_similarity_remote_sequence": 5812,
+    "ad_similarity_high": 576,
+    "ad_similarity_medium": 2521,
+    "oriented_ac_with_any_positive": 11832,
+    "ad_rows": 33863,
+    "triplet_rows": 7979,
+    "grade_adjusted_CF-A-provisional_to_CF-B-provisional": 562,
+    "grade_adjusted_CF-B-provisional_to_CF-C-provisional": 4614,
+    "CF-B-provisional": 3280,
+    "CF-A-provisional": 85,
+    "CF-C-provisional": 4614
+  },
+  "manual_audit_sample_rows": 300,
+  "semantic_constraints": {
+    "negative": "assembly-context direct noncontact; not universal non-binding",
+    "positive": "PDB exact contact; interface size is verified only for same-assembly bridge edges",
+    "similarity": "local BLOSUM62 full-sequence identity and bidirectional coverage; domain and structure pending",
+    "strata": "3_10/11_24 feed the hard-negative pool (CF-A/CF-B); gt24 is Structure-C/CF-C exploration only"
+  },
+  "blocking_gates_before_final_training": [
+    "independent biological-assembly rebuild audit",
+    "external direct-positive conflict filtering",
+    "PINDER-grade interface validation for external A-D positives",
+    "Pfam/domain-architecture similarity",
+    "Foldseek or TM-align monomer/partner similarity",
+    "homology/structure/publication grouped leakage-safe split",
+    "manual stratified review"
+  ]
+}

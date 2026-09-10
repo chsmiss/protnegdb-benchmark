@@ -1,0 +1,254 @@
+{
+  "status": "negatome_figure4_experimental_negative_subset_v1",
+  "model": "PLM-interact-650M-humanV12 published; no new training",
+  "label_semantics": "literature_noninteraction_not_assembly_noncontact",
+  "max_length": 1024,
+  "direct_mi": [
+    "0009",
+    "0012",
+    "0016",
+    "0018",
+    "0030",
+    "0047",
+    "0055",
+    "0059",
+    "0065",
+    "0096",
+    "0099",
+    "0107",
+    "0114",
+    "0405",
+    "0411",
+    "0415",
+    "0848",
+    "0892",
+    "0921"
+  ],
+  "funnel": [
+    {
+      "filter": "manual_scored",
+      "n": 1851,
+      "mean": 0.4231,
+      "median": 0.035,
+      "frac_ge_0.5": 0.4225,
+      "frac_ge_0.5_ci95": [
+        0.4002,
+        0.4451
+      ],
+      "n_ge_0.5": 782
+    },
+    {
+      "filter": "manual_stringent",
+      "n": 1685,
+      "mean": 0.3864,
+      "median": 0.0165,
+      "frac_ge_0.5": 0.3846,
+      "frac_ge_0.5_ci95": [
+        0.3616,
+        0.408
+      ],
+      "n_ge_0.5": 648
+    },
+    {
+      "filter": "stringent_canonical",
+      "n": 1652,
+      "mean": 0.382,
+      "median": 0.0151,
+      "frac_ge_0.5": 0.3801,
+      "frac_ge_0.5_ci95": [
+        0.357,
+        0.4038
+      ],
+      "n_ge_0.5": 628
+    },
+    {
+      "filter": "stringent_canonical_human",
+      "n": 1129,
+      "mean": 0.3836,
+      "median": 0.0094,
+      "frac_ge_0.5": 0.3835,
+      "frac_ge_0.5_ci95": [
+        0.3556,
+        0.4122
+      ],
+      "n_ge_0.5": 433
+    },
+    {
+      "filter": "stringent_canonical_human_length",
+      "n": 621,
+      "mean": 0.3637,
+      "median": 0.0047,
+      "frac_ge_0.5": 0.3623,
+      "frac_ge_0.5_ci95": [
+        0.3255,
+        0.4009
+      ],
+      "n_ge_0.5": 225
+    },
+    {
+      "filter": "figure4_direct_subset",
+      "n": 470,
+      "mean": 0.2912,
+      "median": 0.001,
+      "frac_ge_0.5": 0.2894,
+      "frac_ge_0.5_ci95": [
+        0.2502,
+        0.3319
+      ],
+      "n_ge_0.5": 136
+    }
+  ],
+  "figure4_subset": {
+    "n": 470,
+    "mean": 0.2912,
+    "median": 0.001,
+    "frac_ge_0.5": 0.2894,
+    "frac_ge_0.5_ci95": [
+      0.2502,
+      0.3319
+    ],
+    "n_ge_0.5": 136,
+    "definition": "manual_stringent AND human-human AND canonical AND len_a+len_b+3<=1024 AND >=1 direct/binary MI method"
+  },
+  "stringent_human_canonical": {
+    "n": 1129,
+    "mean": 0.3836,
+    "median": 0.0094,
+    "frac_ge_0.5": 0.3835,
+    "frac_ge_0.5_ci95": [
+      0.3556,
+      0.4122
+    ],
+    "n_ge_0.5": 433
+  },
+  "stringent_method_breakdown": {
+    "association": {
+      "n": 558,
+      "mean": 0.482,
+      "median": 0.2706,
+      "frac_ge_0.5": 0.4803,
+      "frac_ge_0.5_ci95": [
+        0.4391,
+        0.5217
+      ],
+      "n_ge_0.5": 268
+    },
+    "direct_binary": {
+      "n": 1037,
+      "mean": 0.3204,
+      "median": 0.003,
+      "frac_ge_0.5": 0.3182,
+      "frac_ge_0.5_ci95": [
+        0.2906,
+        0.3472
+      ],
+      "n_ge_0.5": 330
+    },
+    "other": {
+      "n": 87,
+      "mean": 0.5495,
+      "median": 0.8568,
+      "frac_ge_0.5": 0.5517,
+      "frac_ge_0.5_ci95": [
+        0.4472,
+        0.6518
+      ],
+      "n_ge_0.5": 48
+    },
+    "text_mining": {
+      "n": 3,
+      "mean": 0.6668,
+      "median": 0.9997,
+      "frac_ge_0.5": 0.6667,
+      "frac_ge_0.5_ci95": [
+        0.2077,
+        0.9385
+      ],
+      "n_ge_0.5": 2
+    }
+  },
+  "stringent_human_canonical_method_breakdown": {
+    "association": {
+      "n": 322,
+      "mean": 0.5479,
+      "median": 0.8955,
+      "frac_ge_0.5": 0.5497,
+      "frac_ge_0.5_ci95": [
+        0.4951,
+        0.6031
+      ],
+      "n_ge_0.5": 177
+    },
+    "direct_binary": {
+      "n": 766,
+      "mean": 0.2968,
+      "median": 0.0013,
+      "frac_ge_0.5": 0.2963,
+      "frac_ge_0.5_ci95": [
+        0.2651,
+        0.3296
+      ],
+      "n_ge_0.5": 227
+    },
+    "other": {
+      "n": 38,
+      "mean": 0.7175,
+      "median": 0.9968,
+      "frac_ge_0.5": 0.7105,
+      "frac_ge_0.5_ci95": [
+        0.5524,
+        0.83
+      ],
+      "n_ge_0.5": 27
+    },
+    "text_mining": {
+      "n": 3,
+      "mean": 0.6668,
+      "median": 0.9997,
+      "frac_ge_0.5": 0.6667,
+      "frac_ge_0.5_ci95": [
+        0.2077,
+        0.9385
+      ],
+      "n_ge_0.5": 2
+    }
+  },
+  "comparators_published": {
+    "structure_ac_negative": {
+      "n": 6051,
+      "mean": 0.7978,
+      "median": 0.9996,
+      "frac_ge_0.5": 0.7984
+    },
+    "structure_ad_positive": {
+      "n": 19818,
+      "mean": 0.857,
+      "median": 0.9997,
+      "frac_ge_0.5": 0.8589
+    },
+    "structure_random_unlabeled": {
+      "n": 2000,
+      "mean": 0.3264,
+      "median": 0.0027,
+      "frac_ge_0.5": 0.3245
+    }
+  },
+  "swissprot_tax_coverage": 1635,
+  "string_train_overlap": {
+    "train_positive_pairs": 60308,
+    "negatome_scored_in_train_positives": 157,
+    "figure4_subset_in_train_positives": 27
+  },
+  "figure4_excluding_string_train_positives": {
+    "n": 443,
+    "mean": 0.2481,
+    "median": 0.0006,
+    "frac_ge_0.5": 0.246,
+    "frac_ge_0.5_ci95": [
+      0.2082,
+      0.2882
+    ],
+    "n_ge_0.5": 109
+  },
+  "note": "Figure 4 tests whether published PLM-Interact's high scores on assembly noncontacts also appear on experimentally supported non-interactions after matching the model's sequence/species/length/direct-assay regime. Do not merge the two negative labels."
+}

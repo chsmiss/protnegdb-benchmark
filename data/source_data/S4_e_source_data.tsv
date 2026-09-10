@@ -1,0 +1,4 @@
+threshold	split	family	n	total	fraction
+50	protein_unseen_family_seen	P40227	23	101	0.22772277227722773
+50	family_unseen	Q84Y02	34	540	0.06296296296296296
+30	family_unseen	A0A4V8H002	150	652	0.23006134969325154

@@ -1,0 +1,14 @@
+split	triplets	unique_A	unique_C	unique_D	unique_proteins	mmseqs_families	unique_ac	replicated_ac_triplets	replicated_unique_ac
+train_eligible	1569	560	542	655	1108	796	721	1184	504
+train_fit_internal	1412	539	519	624	1072	772	684	1069	480
+train_dev_internal	157	127	135	134	335	293	143	115	102
+train_ineligible_unpermuted	181	121	111	131	271	215	115	133	78
+protein_unseen_family_seen	152	94	84	103	216	94	88	96	56
+family_unseen	652	391	327	368	713	527	389	436	255
+dropped_mixed_family	332	122	107	124	198	53	164	202	91
+dropped_mixed_protein	408	198	170	194	388	200	236	235	143
+dropped_pdb_overlap	69	51	44	55	115	65	42	41	21
+dropped_family_seen_after_eligible	2	2	1	1	4	4	2	2	2
+replicated_subset_all_assigned_tests	532	312	269	327	634	455	311	532	311
+replicated_protein_unseen_family_seen	96	62	56	76	154	79	56	96	56
+replicated_family_unseen	436	250	213	251	480	376	255	436	255
