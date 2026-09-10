@@ -7,14 +7,13 @@ The complete negative-interaction resource is available at [http://protnegdb.bjm
 ## Contents
 
 ```text
-code/notebooks/   Figure 2, Figure 4a/b and Supplementary S1–S9
 code/scripts/     analysis and rendering programs
 data/cohorts/     locked evaluation subsets
 data/interim/     scores, splits and intermediate tables
 data/source_data/ figure source tables
 ```
 
-Scripts treat the repository root as two directories above `code/scripts/`. Notebooks search parent directories for both `code/` and `data/`. Run notebooks from the repository root or from `code/notebooks`.
+Scripts treat the repository root as two directories above `code/scripts/`.
 
 The two 300-triplet files (`multimodel_300_256anchors.tsv` and `same_anchor_300_266anchors.tsv`) are independent cohorts and must not be merged.
 
@@ -52,16 +51,7 @@ Negative labels are not interchangeable: experimental non-binding, cellular/prox
 
 Internal path names such as Fig. 5/6 or “family transfer” are retained by the analysis scripts and do not indicate superseded figure versions.
 
-## Code
-
-| Path | Content |
-|---|---|
-| `code/notebooks/01_Figure2_sequence_partner_selection.ipynb` | Figure 2 |
-| `code/notebooks/Figure4ab_colors_20260908.ipynb` | Figure 4a,b |
-| `code/notebooks/S1.ipynb`–`S9.ipynb` | Supplementary S1–S9 |
-| `code/scripts/render_nature_selected_figures_20260907.py` | Figures 3–5 |
-
-Dependencies: [`requirements.txt`](requirements.txt). File checksums: [`SHA256SUMS`](SHA256SUMS). Additional notes: [`code/README.md`](code/README.md).
+Main Figures 3–5 are assembled by `code/scripts/render_nature_selected_figures_20260907.py`. Dependencies: [`requirements.txt`](requirements.txt). Checksums: [`SHA256SUMS`](SHA256SUMS).
 
 ## Citation
 

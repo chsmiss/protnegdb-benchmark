@@ -11,3 +11,5 @@ __pycache__/
 
 # Local layer representations are not part of the public reader package.
 data/interim/**/layer_cls_v1.npz
+code/notebooks/
+CHANGELOG.md

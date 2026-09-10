@@ -1,8 +1,7 @@
 # Analysis code
 
 The repository root contains both `code/` and `data/`. Scripts resolve that
-root as two directories above `code/scripts/`. Notebooks search parent
-directories for the same pair of folders.
+root as two directories above `code/scripts/`.
 
 `data/cohorts` holds the locked evaluation subsets. The two 300-triplet
 cohorts must not be merged. Main Figures 3–5 are assembled by
