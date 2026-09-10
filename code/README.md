@@ -13,19 +13,11 @@ Figures 3–5 are assembled by `code/scripts/render_nature_selected_figures_2026
 sample metadata, score inputs, split assignments and intermediate statistics.
 Repeated-PDB subsets, 30%/50% cluster definitions and three fine-tuning seeds
 are distinct analyses, not superseded releases. The two 300-triplet cohorts
-must not be merged. Frozen representation arrays are supplied to refit probes.
-
-The four `layer_cls_v1.npz` archives are GitHub Release assets. After cloning:
-
-```bash
-bash code/scripts/download_representation_arrays.sh
-```
+must not be merged.
 
 The complete ProtNegDB negative resource is intentionally excluded. Model
-checkpoints, full PDB/UniProt databases and GPU inference environments remain
-external prerequisites. Recorded sequence-pair SHA-1 keys support exact
-positive training-overlap checks without distributing the original large
-training table.
+checkpoints, frozen layer-representation arrays, full PDB/UniProt databases
+and GPU inference environments remain external and are not distributed.
 
 Python scripts and notebook cells have been syntax checked and cohort counts
 verified. Full inference and all notebooks have not been re-executed in this

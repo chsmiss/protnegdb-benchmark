@@ -22,15 +22,13 @@ This package contains:
 
 - explicit evaluation subsets used in the manuscript figures;
 - per-model scores, split assignments, training inputs and summary statistics for those subsets;
-- notebooks and Python scripts used to produce the reported panels;
-- frozen layer representations required to refit the Figure 3 probes;
-- SHA-1 keys of positive training sequence pairs for exact overlap checks.
+- notebooks and Python scripts used to produce the reported panels.
 
 This package does **not** contain:
 
 - the full literature-negative resource (11,071 records);
 - the full structural noncontact resource (558,112 records);
-- original model weights, embeddings computed from those weights, or GPU runtimes;
+- frozen layer-representation arrays or original model weights;
 - a claim of one-command reconstruction of every upstream database query.
 
 Legacy internal names such as Fig. 5/6 or “family transfer” are retained because the analysis scripts still call those paths. They do not indicate that superseded figure versions were submitted. Figure 2b/c and Supplementary Figures S2a–c follow the 10 September 2026 PDF numbering.
@@ -54,10 +52,7 @@ Python scripts and notebook cells were syntax-checked, and explicit cohort count
 └── data/
     ├── cohorts/       # locked evaluation subsets
     ├── interim/       # scores, splits, manifests and probe inputs
-    ├── reported_stats/
-    ├── source_data/   # figure source tables
-    ├── structures/    # three example PDB biological assemblies
-    └── training_reference/  # SHA-1 keys of positive training pairs
+    └── source_data/   # figure source tables
 ```
 
 Analysis scripts resolve the repository root as two directories above `code/scripts/` (`Path(__file__).resolve().parents[2]`). Notebooks search parent directories for a folder that contains both `code/` and `data/`. Run notebooks from the repository root or from `code/notebooks`.
@@ -126,28 +121,7 @@ Operational notes are in [`code/README.md`](code/README.md).
 
 The figure notebooks were executed in a Python environment with NumPy, pandas, Matplotlib, seaborn and SciPy. A minimal requirement file is provided as [`requirements.txt`](requirements.txt). Notebooks specify Arial; if that font is unavailable, Matplotlib will substitute a default sans-serif font and panel metrics may differ slightly.
 
-## Frozen representation arrays
-
-Four NumPy archives used to refit the Figure 3 / S3 layer-wise probes exceed GitHub’s 100 MB blob limit and are distributed as GitHub Release assets rather than Git objects:
-
-| Release asset | Local path | Approximate size |
-|---|---|---:|
-| `mint_esm2_layer_cls_v1.npz` | `data/interim/mint_layerwise_probes_v1/esm2/layer_cls_v1.npz` | 1.1 GB |
-| `mint_mint_layer_cls_v1.npz` | `data/interim/mint_layerwise_probes_v1/mint/layer_cls_v1.npz` | 1.1 GB |
-| `plminteract_esm2_layer_cls_v1.npz` | `data/interim/plminteract_layerwise_probes_v1/esm2/layer_cls_v1.npz` | 0.56 GB |
-| `plminteract_plminteract_layer_cls_v1.npz` | `data/interim/plminteract_layerwise_probes_v1/plminteract/layer_cls_v1.npz` | 0.56 GB |
-
-After cloning the repository:
-
-```bash
-bash code/scripts/download_representation_arrays.sh
-```
-
-Checksums for all packaged files, including these arrays, are listed in [`SHA256SUMS`](SHA256SUMS). Classifier and MLP head parameters (`*.npy`) remain in Git because they are smaller.
-
-## Training-overlap reference
-
-`data/training_reference/string_positive_sequence_pairs.sha1.tsv` contains SHA-1 keys of positive training sequence pairs. The table supports exact overlap checks against the reported negatives without distributing the original large training matrix.
+Checksums for packaged files are listed in [`SHA256SUMS`](SHA256SUMS).
 
 ## Third-party resources
 
