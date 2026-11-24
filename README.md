@@ -1,10 +1,12 @@
 # ProtNegDB Benchmark
 
+The current [Patterns benchmark reproduction](patterns/) accompanies the November 2026 manuscript.
+
 Evaluation cohorts, model scores, figure source data and analysis code for ProtNegDB.
 
 The complete negative-interaction resource is available at [http://protnegdb.bjmu.edu.cn/](http://protnegdb.bjmu.edu.cn/). Model checkpoints, source databases and GPU runtimes are not included.
 
-## Contents
+## September 2026 benchmark archive
 
 ```text
 code/scripts/     analysis and rendering programs

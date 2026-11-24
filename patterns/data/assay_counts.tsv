@@ -1,0 +1,16 @@
+assay	negative_records	negative_entries	sequence_ready_negatives	IntAct_positives	conflicts	dependency_components	matches
+Co-IP	1,153	1,037	965	355	29	548	585
+Pull-down	656	581	543	115	8	174	282
+Two-hybrid	655	552	513	128	8	174	190
+SPR	47	37	33	15	0	40	19
+Affinity chromatography	132	125	110	7	0	85	11
+Cosedimentation / fractionation	34	33	31	8	1	25	11
+ELISA / solid phase	47	46	45	9	1	24	11
+Far-western	18	18	14	1	0	14	2
+crosslinking	16	15	14	2	0	11	2
+BRET	6	6	6	1	0	2	1
+BiFC	4	2	2	1	0	3	1
+ITC	10	6	6	1	0	5	1
+Other complementation	7	7	6	1	0	5	1
+Scintillation proximity assay	3	3	3	1	0	2	1
+14-category total	—	2,468	2,291	645	—	—	1,118

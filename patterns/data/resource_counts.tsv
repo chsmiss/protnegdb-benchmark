@@ -1,0 +1,19 @@
+scope	counting_unit	count
+PDB assemblies	Searched / downloaded / retrieval failures	197,374 / 197,085 / 289
+PDB noncontact catalogue	Distinct unordered protein-identifier pairs	558,112
+PDB noncontact catalogue	Representative class: Class A	129,632
+PDB noncontact catalogue	Representative class: Class B	428,420
+PDB noncontact catalogue	Representative class: Class C	47
+PDB noncontact catalogue	Representative class: unclassified	13
+Structural benchmark	Same-anchor comparisons / contributing assemblies	1,348 / 315
+Structural benchmark	Pair–assembly binary observations / contributing assemblies	1,795 / 331
+Literature PPI catalogue	Candidate pairs / publications	11,071 / 8,254
+Literature PPI catalogue	Direct binding / cellular interaction	1,498 / 761
+Literature PPI catalogue	Co-complex association / assay unresolved	1,836 / 6,976
+ProtNegDB reviewed subset	Source records / mapped unique pairs / sequence-ready unique pairs	480 / 271 / 264
+Negatome 2.0 Manual	Source records / mapped unique pairs / sequence-ready unique pairs	2,171 / 2,031 / 1,851
+Integrated literature negatives	Source records / mapped unique pairs / pair–assay entries	2,651 / 2,300 / 2,702
+Integrated literature negatives	Pair–assay entries from ProtNegDB alone / Negatome alone / both	272 / 2,429 / 1
+Integrated literature negatives	Sequence-ready / missing reference sequence	2,488 / 214
+Integrated literature negatives	Sequence-ready in categories with matched positives / unresolved assay / other categories without matched positives	2,291 / 143 / 54
+IntAct matching	Matched comparisons / distinct positive pair–assay entries	1,118 / 645

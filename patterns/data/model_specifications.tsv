@@ -1,0 +1,13 @@
+predictor	model_family	weights	protocol	score
+AlphaFold 3	Complex structure	Runner 3.0.1 with released AlphaFold 3 weights	Two chains with MSAs/templates. Audited runs used 1 seed, 5 samples, 10 recycles and template cutoff 2021-09-30. Archived MSA sources varied.	ipTM of the native top-ranked sample
+RoseTTAFold2-PPI	Complex structure	Released RoseTTAFold2-PPI weights	Two chains. Local runs paired cached monomer alignments.	Max. interchain probability summed over distance bins 0–19
+ESMFold	Structure-derived pair proxy	facebook/esmfold_v1	Two sequences joined by a 25-glycine linker, with 4 recycles and initial chunk size 64.	Negative mean between-chain PAE, excluding the linker
+PLM-Interact	Sequence pair classifier	PLM-interact-650M-humanV12 (ESM2 and classifier)	Jointly tokenized canonical sequences with longest-first truncation at 1,024 input tokens.	Interaction probability
+D-SCRIPT	Sequence pair classifier	Released human D-SCRIPT v1 weights	Full protein sequences up to 2,000 residues per chain in the benchmark.	Contact-map-derived interaction probability
+Topsy-Turvy	Sequence pair classifier	Released human Topsy-Turvy v1 weights	Full protein sequences up to 2,000 residues per chain in the benchmark.	Contact-map-derived interaction probability
+MINT	Sequence pair classifier	mint.ckpt encoder and bernett_mlp.pth head	512-residue crops with reciprocal orders averaged within seeds 13, 29, 47, 71, 97.	Interaction probability averaged over seeds
+SPRINT	Sequence similarity baseline	Official OpenMP implementation with default PAM120	Mapped positive human training interactions from the D-SCRIPT benchmark used for HSP matching.	Unbounded interaction score
+PPLM-PPI	Sequence pair classifier	pplm_t33_650M.pt and ppi_models.pkl	Full-sequence inputs with per-layer exact attention pooling in the profiled run.	Interaction score from the released PPI heads
+RAPPPID	Sequence pair classifier	Released red-dreamy checkpoint	Full sequences with dynamic token length. Resource panel scores were reused.	Interaction probability
+TUnA	Sequence pair classifier	Released Bernett-split weights	Full-sequence inputs with dynamic lengths.	Interaction probability
+PPLM-Contact	Residue-contact predictor	pplm_t33_650M.pt and pplm_contact_models.pkl	Monomer structures and paired and monomer alignments. At most 1,023 residues total.	Mean of top min(L1, L2) entries after averaging 5 heads and both heterodimer orders
